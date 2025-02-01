@@ -6,7 +6,8 @@
     "outDir": "./dist",                      // Dossier de sortie des fichiers compilés
     "esModuleInterop": true,                 // Interopérabilité avec les modules CommonJS
     "skipLibCheck": true,                    // Ignorer la vérification des types dans les lib externes
-    "strict": true                           // Activer toutes les options strictes
+    //"strict": true,                           // Activer toutes les options strictes
+    "declaration": true
   },
   "include": ["src/**/*"]
 }

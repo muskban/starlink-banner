@@ -1,11 +1,14 @@
 {
   "name": "anti-starlink",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "1.0.2",
+  "main": "./src/main.ts",
   "scripts": {
-    "build": "rollup -c",
+    "build": "npm run clean && rollup -c",
     "clean": "rm -rf dist/*",
-    "dev": "rollup -c --watch"
+    "dev": "rollup -c --watch",
+    "update_ips": "./scripts/csv_to_json.bash",
+    "dry-publish": "npm publish --dry-run",
+    "do-publish": "npm publish"
   },
   "type": "module",
   "keywords": [],

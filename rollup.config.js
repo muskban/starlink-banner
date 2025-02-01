@@ -8,16 +8,16 @@ export default {
     input: 'src/main.ts',  // Point d'entrée de la librairie
     output: [
         {
-            file: 'dist/bundle.js',   // Fichier de sortie
+            file: 'dist/bundle.min.js',   // Fichier de sortie
             format: 'esm',            // Format ES module pour navigateur moderne
             sourcemap: true           // Générer un sourcemap
         }
     ],
     plugins: [
-        //terser(),
+        terser(),
         copy({
             targets: [
-                { src: 'src/static/*', dest: 'dist/static' } // Copy static files to dist/static
+                { src: 'src/res/*', dest: 'dist/res/' }, // Copy static files to dist/static
             ]
         }),
         resolve(),                 // Résoudre les modules dans node_modules
