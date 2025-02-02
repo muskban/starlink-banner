@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <script type="module" src="https://cdn.jsdelivr.net/npm/starlink-banner/dist/bundle.min.js"></script>
+
+    <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/purecss@3.0.0/build/pure-min.css"
+            integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls"
+            crossorigin="anonymous">
+
+</head>
+<body>
+<style>
+    main {
+        max-width: 600px;
+        margin: auto;
+    }
+    h1, h2 {
+        color: darkblue;
+    }
+    .code {
+        display: block;
+        font-family: monospace;
+        background-color: lightgray;
+        padding:1em;
+    }
+
+</style>
+<main>
+
+    <header>
+        <h1>Test page for starlink-banner</h1>
+    </header>
+
+
+    <article>
+        <h2>Purpose</h2>
+
+        <p>
+        This page demonstrates the usage of the javascript library <a href="https://www.npmjs.com/package/starlink-banner">startlink-banner</a>.
+        </p>
+
+        <p>
+            This library detects clients using Starlink to access the web,
+            and shows a banner warning them that this company belongs to <b>Elon Musk</b>, who is <b>openly a neo-Nazi</b>.
+        </p>
+
+    </article>
+
+    <article>
+        <h2>Preview</h2>
+
+        <p>The banner looks like this :</p>
+        <img src="./res/preview.png" alt="Screenshot of the banner">
+
+    </article>
+
+    <article>
+    <h2>Setup</h2>
+
+        Just include the following line in your html/head:
+
+        <br/>
+        <br/>
+        <code class="code">
+&lt;script type=&quot;module&quot; src=&quot;https://cdn.jsdelivr.net/npm/starlink-banner/dist/bundle.min.js&quot;&gt;&lt;/script&gt;
+        </code>
+
+    </article>
+
+    <article>
+        <h2>Test</h2>
+
+        <p>Add <code>"?starlink=1"</code> on any URL to see the banner.</p>
+
+        <button id="test-banner" >Test the banner</button>
+    </article>
+
+    <script lang="javascript">
+        document.getElementById('test-banner').addEventListener('click', () => {
+            localStorage.clear();
+            window.location.href = '?starlink=1';
+        })
+
+    </script>
+
+
+
+</main>
+</body>
+</html>
