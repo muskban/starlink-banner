@@ -1,6 +1,6 @@
 import {inRange} from "range_check";
 
-const CURRENT_URL = new URL('.', import.meta.url).pathname;
+const CURRENT_URL = new URL('.', import.meta.url).href;
 
 let IP_ENDPOINT = "https://api.ipify.org";
 //let IP_ENDPOINT = "https://api64.ipify.org";
