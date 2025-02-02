@@ -1,6 +1,6 @@
 {
   "name": "starlink-banner",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "main": "./src/main.ts",
   "scripts": {
     "build": "npm run clean && rollup -c",
