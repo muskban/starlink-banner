@@ -9,6 +9,8 @@ let IP_ENDPOINT = "https://api.ipify.org";
 let RANGES_ENDPOINT=CURRENT_URL + 'res/starlink_ranges.json';
 let BANNER_ID="starlink-banner";
 let CLOSED_BANNER_KEY="starlink-banner-closed";
+let MUSK_NAZI_URL="https://banmusk.net/elon-musk-is-a-nazi"
+
 let CONTENT = `
         <style>
             #${BANNER_ID} {
@@ -40,7 +42,7 @@ let CONTENT = `
             Hi, it seems you are using <b>Starlink</b> to access internet.
         </p>
         <p>
-            Starlink belongs to <b>Elon Musk</b>, who is <a href="https://banmusk.net/">openly a neo nazi</a>.<br/> 
+            Starlink belongs to <b>Elon Musk</b>, who is <a href="${MUSK_NAZI_URL}">openly a neo nazi</a>.<br/> 
             Please consider other, <a href="https://www.google.com/search?q=+alternative+starlink">non-neonazi, alternatives.</a>  
         </p>
         
