@@ -6,7 +6,7 @@ console.log("Current URL", CURRENT_URL);
 
 let IP_ENDPOINT = "https://api.ipify.org";
 //let IP_ENDPOINT = "https://api64.ipify.org";
-let RANGES_ENDPOINT=CURRENT_URL + '/res/starlink_ranges.json';
+let RANGES_ENDPOINT=CURRENT_URL + 'res/starlink_ranges.json';
 let BANNER_ID="starlink-banner";
 let CLOSED_BANNER_KEY="starlink-banner-closed";
 let CONTENT = `
@@ -34,7 +34,7 @@ let CONTENT = `
             }
 
         </style>
-       <img id="musk-salute" src="${CURRENT_URL}/res/musk.png" alt="Elon Musk doing the nazi salute."/>
+       <img id="musk-salute" src="${CURRENT_URL}res/musk.png" alt="Elon Musk doing the nazi salute."/>
        
         <p>
             Hi, it seems you are using <b>Starlink</b> to access internet.
