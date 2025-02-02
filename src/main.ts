@@ -2,6 +2,8 @@ import {inRange} from "range_check";
 
 const CURRENT_URL = new URL('.', import.meta.url).href;
 
+console.log("Current URL", CURRENT_URL);
+
 let IP_ENDPOINT = "https://api.ipify.org";
 //let IP_ENDPOINT = "https://api64.ipify.org";
 let RANGES_ENDPOINT=CURRENT_URL + '/res/starlink_ranges.json';

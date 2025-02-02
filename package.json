@@ -7,8 +7,8 @@
     "clean": "rm -rf dist/*",
     "dev": "rollup -c --watch",
     "update_ips": "./scripts/csv_to_json.bash",
-    "dry-publish": "npm publish --dry-run",
-    "do-publish": "npm publish"
+    "dry-publish": "npm run build && npm publish --dry-run",
+    "do-publish": "npm run build && npm publish"
   },
   "type": "module",
   "keywords": [],
